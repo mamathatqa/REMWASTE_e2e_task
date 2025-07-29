@@ -1,0 +1,14 @@
+{
+  "login":
+  {
+    "invalid":["test1", "test1"],
+    "no user":[" ", "password"],
+    "no password": ["testuser", " "],
+    "valid":["testuser", "password"]
+  },
+  "tasks":{
+    "login": ["testuser", "password"],
+    "task": ["test_task1", "test_task2", "test_task3"],
+    "edit": ["test_task3", "test_task3_Edited"]
+  }
+}

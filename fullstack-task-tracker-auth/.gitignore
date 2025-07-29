@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+
+# Dependency locks
+package-lock.json
+yarn.lock
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+
+# Environment files
+.env
+
+# Cypress screenshots and videos
+cypress/screenshots/
+cypress/videos/
+
+# Coverage reports
+coverage/
+
+# VSCode settings
+.vscode/
+
+# Build directories
+dist/
+build/

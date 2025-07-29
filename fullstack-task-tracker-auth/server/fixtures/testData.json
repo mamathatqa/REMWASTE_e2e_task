@@ -1,0 +1,45 @@
+{
+  "login": [
+    {
+      "scenario":"invalid creds",
+      "username": "invalidUser",
+      "password": "wrongPass",
+      "expectedStatus": 401,
+      "expectedMessage": "Invalid credentials",
+      "hasToken": false
+    },
+    {
+      "scenario":"blank username",
+      "username": " ",
+      "password": "password",
+      "expectedStatus": 401,
+      "expectedMessage": "Invalid credentials",
+      "hasToken": false
+    },
+    {
+      "scenario":"blank password",
+      "username": "testuser",
+      "password": " ",
+      "expectedStatus": 401,
+      "expectedMessage": "Invalid credentials",
+      "hasToken": false
+    },
+    {
+      "scenario":"valid",
+      "username": "testuser",
+      "password": "password",
+      "expectedStatus": 200,
+      "expectedMessage": null,
+      "hasToken": true
+    }
+  ],
+  "validLogin":{
+    "username": "testuser",
+      "password": "password"
+  },
+  "task": {
+    "create":"task1_test",
+    "edit": "task1_test_edited",
+    "delete": "taskToDelete"
+  }
+}
